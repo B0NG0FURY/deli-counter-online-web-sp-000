@@ -5,6 +5,10 @@ def line(array)
   if array.length == 0
     "The line is currently empty."
   else
-    array.each_with_
+    line_string = ""
+    array.each_with_index do |person, index|
+      line_string += "#{index}. #{person} "
+    end
+    line_string
   end
 end
