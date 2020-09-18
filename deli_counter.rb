@@ -3,12 +3,12 @@ katz_deli = []
 
 def line(array)
   if array.length == 0
-    "The line is currently empty."
+    puts "The line is currently empty."
   else
     line_string = ""
     array.each_with_index do |person, index|
       line_string += "#{index}. #{person} "
     end
-    line_string
+    puts line_string
   end
 end
