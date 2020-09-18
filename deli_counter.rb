@@ -7,6 +7,7 @@ def line(array)
   else
     line_string = ""
     array.each_with_index do |person, index|
+      index += 1
       line_string += "#{index}. #{person} "
     end
     puts line_string
